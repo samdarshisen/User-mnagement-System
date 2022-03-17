@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Update</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <form action="/update/<%= data._id%>"method="post">
+      <input type="text" name="name"placeholder="Enter Name"value="<%= data.name%>"required>
+      <input type="number"name="mobile"placeholder="Enter Mobile Number"value="<%= data.mobile%>"required>
+      <input type="text"name="location"placeholder="Enter the location"value="<%= data.location%>"required>
+      <input type="submit"value="Save">
+
+    </form>
+  </body>
+</html>

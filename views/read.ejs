@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>User and Contact Management System</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <a href="/">Back</a>
+        <h1>
+
+            User Details
+        </h1>
+        <table>
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Mobile Number
+                </th>
+                <th>
+                    Location
+                </th>
+                <th>Action</th>
+            </tr>
+            <%data.forEach(function(item){%>
+                <tr>
+                    <td>
+                        <%= item.name%>
+                    </td>
+                    <td>
+                        <%= item.mobile%>
+                    </td>
+                    <td>
+                        <%= item.location%>
+                    </td>
+                    <td>
+                        <a href="/delete/<%= item._id%>"><i class="fa fa-trash"></i></a>
+                        <a href="/update/<%= item._id%>"><i class="fa fa-pen"></i></a>
+                    </td>
+                </tr>
+                <%})%>
+        </table>
+    </div>
+</body>
+
+</html>
