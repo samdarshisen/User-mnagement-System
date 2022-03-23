@@ -1,8 +1,51 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color : orange;
+
 }
 
 a {
-  color: #00B7FF;
+  color: red;
+  text-decoration : none;
+  
+}
+
+table {
+  color : red;
+}
+.center {
+  position : absolute;
+  top : 50%;
+  left : 50%;
+  transform : translate(-50% , -50%);
+  text-align: center;
+  background-color: aqua;
+  padding : 30px;
+  border-radius : 20px;
+}
+input {
+  display : block;
+  width : 400px;
+  font-size : 20px;
+  padding : 10px;
+  border: 1px solid white;
+  background-color: aqua;
+  color : red;
+  text-align : center;
+  margin : 10px;
+
+}
+input[type = 'submit']{
+  background-color: orange;
+  display: block;
+  width: 423px;
+  border: 1px solid white;
+}
+form {
+  position: absolute;
+  top : 50%;
+  left : 50%;
+  transform : translate(-50% , -50%);
+  text-align: center;
 }
